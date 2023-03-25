@@ -33,3 +33,100 @@ Nastav je receptům jako obrázky na pozadí (tj. nepřidávej je jako <img> do 
 Na rozložení prvků NEPOUŽÍVEJ absolutní pozicování, ale pouze flexboxy.
 Flexboxy mohou být vnořené do sebe, klidně několikrát.
 */
+
+body {
+	font-size: 14px;
+	font-weight: 400;
+	color: white;
+	text-shadow: 0.5px 0.5px 1px rgb(70, 70, 70);
+}
+
+h1 {
+	font-size: 28px;
+	font-weight: 800;
+	text-shadow: 2px 2px 4px rgb(70, 70, 70);
+	margin: 0;
+	font-family: 'Raleway', sans-serif;;
+}
+
+h2 {
+	font-size: 18px;
+	font-weight: 800;
+	text-shadow: 1px 1px 2px rgb(70, 70, 70);
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+p {
+	margin: 0;
+}
+
+/* ***** Nastavení backgroundů ***** */
+
+.hlavni {
+	background-image: url(images/salat.jpg);
+	background-size: cover;
+}
+
+.jedna {
+	background-image: url(images/chlebicek.jpg);
+	background-size: cover;
+}
+
+.dva {
+	background-image: url(images/cizrna.jpg);
+	background-size: cover;
+}
+
+.tri {
+	background-image: url(images/tacos.jpg);
+	background-size: cover;
+}
+
+.ctyri {
+	background-image: url(images/burger.jpg);
+	background-size: cover;
+}
+
+/* *****   Mobil verze: 0 - 479px  ***** */
+
+.hlavni,
+.box {
+	padding: 10px;
+	margin: 2px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.hlavni {
+	min-height: 200px;
+}
+
+.box {
+	min-height: 90px;
+}
+
+.popisky {
+	flex: 0 1 auto;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.nazev {
+	flex: 0 1 auto;
+}
+
+.jidlo, 
+.komenty {
+	flex: 0 1 auto;
+}
+
+
+
+
+
+
+
+
